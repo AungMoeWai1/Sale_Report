@@ -14,8 +14,7 @@
                         </div>
                         <div class="col-6">
                             <group>
-                                 <field name="date_to" string="End Date: "
-               options="{'min_date': '2025-01-06'" />
+                                 <field name="date_to" string="End Date: "/>
                             </group>
                         </div>
                     </div>
