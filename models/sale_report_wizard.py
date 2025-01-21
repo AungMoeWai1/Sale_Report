@@ -9,15 +9,6 @@ class SaleReportWizard(models.TransientModel):
     date_from = fields.Date(string="Start Date", required=True)
     date_to = fields.Date(string="End Date", required=True)
 
-    @api.onchange('date_from')
-    def _onchange_date_from(self):
-        if self.date_from:
-            import pdb;
-            pdb.set_trace()
-            # Update the max_date for the date_to field to be the same as date_from
-            return {
-                'test': {'startdate': self.date_from}  # Set max_date to date_from
-            }
     def action_generate_report(self):
         # Implement your logic to handle the dates and generate the report
         return {
